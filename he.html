@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Page</title>
+    <link rel="stylesheet" href="./assets/css/tintuc.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        
+        <div class="nav container">
+        
+        <a href="index.html" class="logo">LV<span>TS</span></a>
+
+        <a href="./Login.html" class="login">Login</a>
+        </div>
+        
+    </header>
+
+    <section class="post-header">
+        <div class="header-content post-container">
+
+        <a href="index.html" class="back-home">Quay Trở Lại</a>
+
+        <h1 class="header-title">Ưu Đãi HOT!</h1>
+        
+        <img src="./assets/img/hinh3.webp" alt="" class="header-img">
+        </div>
+    </section>
+
+    <section class="post-content post-container">
+      <h2 class="sub-heading">Đại lý xả kho Mitsubishi Pajero Sport: Giảm sâu tới 269 triệu đồng, rẻ ngang 'SUV C quốc dân' CX-5 bản cao</h2>
+      <p class="post-text"> Một đại lý Mitsubishi ở Quảng Bình đang xả kho những chiếc Pajero Sport với mức giảm mạnh. Theo đó, phiên bản 4x4 AT được giảm 269 triệu còn 1,096 tỷ đồng, còn bản 4x2 AT giảm 210 triệu còn 920 triệu đồng. Tuy nhiên, ưu đãi này chỉ áp dụng cho những chiếc Mitsubishi Pajero Sport màu nâu sản xuất năm 2023.</p>
+      <p class="post-text">Theo tư vấn viên của đại lý, những chiếc Pajero Sport sở hữu phối màu khác sẽ được áp dụng ưu đãi giảm 100% lệ phí trước bạ. Quy đổi ra tiền mặt, mức hỗ trợ trước bạ lên tới 136,5 triệu đồng.
+        Sau khi áp dụng ưu đãi từ đại lý, mức giá của Mitsubishi Pajero Sport giờ chỉ đắt hơn mẫu xe rẻ nhất phân khúc Isuzu mu-X 20 triệu đồng.
+      </p>
+      <h3 class="sub-heading">Mitsubishi Pajero Sport có gì?</h3>
+      <p class="post-text">Mitsubishi Pajero Sport sở hữu ngoại hình cuốn hút và mạnh mẽ. Phần đầu xe nổi bật nhờ mặt ca-lăng cỡ lớn với 3 thanh mạ chrome ở trên và lưới tản nhiệt dạng tổ ong phía dưới. Hệ thống đèn pha sử dụng công nghệ LED tích hợp công nghệ điều chỉnh độ cao góc chiếu. Dàn mâm là loại 6 chấu kép 18 inch.
+        Ngoại hình Mitsubishi Pajero Sport mang đậm chất nam tính. 
+        
+        Nội thất của Mitsubishi Pajero Sport được thiết kế theo kiểu đối xứng truyền thống. Vật liệu sử dụng chủ yếu là nhựa nhưng việc thêm thắt một số chi tiết mạ chrome cũng gỡ gạc lại phần nào tính thẩm mỹ.
+        
+        Nội thất của Mitsubishi Pajero Sport tỏ ra kém sắc hơn khi so các đối thủ. 
+        
+        Một số tính năng tiêu biểu bên trong xe có thể kế tới như ghế lái chỉnh điện 8 hướng, vô-lăng 4 chấu tích hợp phím chức năng, lẫy chuyển số, màn hình cảm ứng 8 inch kết nối Apple Carplay & Android Auto, dàn âm thanh đầu ra 6 loa, điều hoà 2 vùng, cửa sổ trời panorama.
+        
+        
+        Dưới nắp ca-pô xe được trang bị khối động cơ dầu 2.4L cho công suất 181 PS và mô-men xoắn 430Nm. Pajero Sport được trang bị hộp số tự động 8 cấp và 2 cấu hình dẫn động cầu sau và 2 cầu.
+      </p>
+    </section>
+
+    <div class="share post-container">
+        <span class="share-title">Chia Sẻ</span>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+    </div>
+
+    <section class="post container">
+    </section>
+
+    <div class="footer container">
+        <p>&#169; Thông tin liên hệ.</p>
+        <div class="social">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+        </div>
+    
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnX11h5ywQfKtSj8PCmoN9aaq30gDh27Xcθjk="
+    crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function () {
+        $(".filter-item").click(function () {
+        const value = $(this).attr("data-filter");
+        if (value == "all") {
+        $(".post-box").show("1000");
+        } else {
+        $(".post-box")
+         .not("." + value)
+         .hide("1000");
+        $(".post-box")
+         .filter("." + value)
+         . show( "1000");
+        }
+    });
+    
+    $(".filter-item").click(function () {
+        $(this).addClass("active-filter").siblings().removeClass("active-filter");
+        });
+    });
+        
+        let header = document.querySelector("header");
+        
+        window.addEventListener("scroll", () => {
+        header. classList.toggle("shadow", window.scrollY > 0);
+    });
+    </script>
+</body>
+</html>

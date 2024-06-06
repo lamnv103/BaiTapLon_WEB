@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Page </title>
+    <link rel="stylesheet" href="./assets/css/tintuc.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        
+        <div class="nav container">
+        
+        <a href="index.html" class="logo">LV<span>TS</span></a>
+
+        <a href="./Login.html" class="login">ĐĂNG NHẬP</a>
+        </div>
+        
+    </header>
+
+    <section class="post-header">
+        <div class="header-content post-container">
+
+        <a href="index.html" class="back-home">Quay Trở Lại</a>
+
+        <h1 class="header-title">Ưu Đãi Hấp Dẫn</h1>
+        
+        <img src="./assets/img/hinh9.webp" alt="" class="header-img">
+        </div>
+    </section>
+
+    <section class="post-content post-container">
+      <h2 class="sub-heading">Giá xe Toyota Vios kèm ưu đãi hấp dẫn tháng 5/2024</h2>
+      <p class="post-text">Trong các thành viên của Hiệp hội các nhà sản xuất ô tô Việt Nam (VAMA) thì Toyota Vios đang là "ông vua" doanh số khi không có bất cứ mẫu xe nào bắt kịp Vios về số lượng xe bán ra trong tháng và cả năm</p>
+      <p class="post-text">Kết thúc năm 2022, với 23.529 xe bàn giao tới người tiêu dùng, Vios tiếp tục trở thành "đại công thần" của Toyota Việt Nam trong cuộc chiến giành thị phần khi có đóng góp doanh số lớn nhất toàn đội và dẫn đầu toàn thị trường. Hiện Toyota Vios vẫn là mẫu sedan B được ưa chuộng nhất nhì tại Việt Nam nhờ tính thương hiệu cũng như độ bền bỉ cao.</p>
+      <h2 class="sub-heading">Toyota Vios 2024 có khuyến mại gì?</h2>
+      <p class="post-text">Để cập nhật thông tin khuyến mại xe Vios mới nhất, quý khách hàng vui lòng liên hệ đại lý gần nhất hoặc truy cập vào mục mua bán xe Toyota Vios tại Oto.com.vn</p>
+      <h2 class="sub-heading"><h2 class="sub-heading">Toyota Vios 2024 có khuyến mại gì?</h2></h2>
+      <p class="post-text">Ngoài số tiền mà khách hàng phải bỏ ra để mua xe Toyota Vios 2024 thì sẽ còn một số khoản thuế, phí khác nhau (tùy vào tỉnh, thành) mà khách hàng sẽ phải bỏ ra để xe có thể lăn bánh. Trong đó, riêng Hà Nội là có phí trước bạ cao nhất (12%), phí ra biển cao nhất (20 triệu đồng), phí ra biển của TP. Hồ Chí Minh là 20 triệu đồng, trong khi đó các tỉnh thành khác chỉ 1 triệu đồng phí lấy biển.</p>
+    </section>
+
+    <div class="share post-container">
+        <span class="share-title">Chia Sẻ</span>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+    </div>
+
+    <section class="post container">
+    </section>
+
+    <div class="footer container">
+        <p>&#169; Thông Tin Liên Hệ</p>
+        <div class="social">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+        </div>
+    
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnX11h5ywQfKtSj8PCmoN9aaq30gDh27Xcθjk="
+    crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $(".filter-item").click(function () {
+            const value = $(this).attr("data-filter");
+            if (value == "all") {
+            $(".post-box").show("1000");
+            } else {
+            $(".post-box")
+             .not("." + value)
+             .hide("1000");
+            $(".post-box")
+             .filter("." + value)
+             . show( "1000");
+            }
+        });
+        
+        $(".filter-item").click(function () {
+            $(this).addClass("active-filter").siblings().removeClass("active-filter");
+            });
+        });
+            
+            let header = document.querySelector("header");
+            
+            window.addEventListener("scroll", () => {
+            header. classList.toggle("shadow", window.scrollY > 0);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+  
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #ffffffe2;
+    --main-color: #00fbff;
+    --second-text-color: hsl(204, 91%, 53%);
+}
+  
+html {
+    font-size: 15.5px;
+}
+  
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+
+
+header {
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__nav {
+    display: flex;
+}
+.header__nav a {
+    color: #fff;
+}
+.header__nav a:hover {
+    color: var(--main-color);
+}
+.fa-solid {
+    color: var(--text-color);
+}
+.header__nav-dk {
+    margin: 0 1.5rem;
+}
+.header__nav-danhMuc {
+    margin: 0 1.5rem;
+}
+.header__nav-muaxe {
+    margin-right: 1.5rem;
+}
+.header__nav-danhMuc-title,
+.header__nav-muaxe-title {
+    display: flex;
+    align-items: center;
+}
+.header__nav-danhMuc-title:hover p,
+.header__nav-danhMuc-title:hover i,
+.header__nav-muaxe-title:hover p,
+.header__nav-muaxe-title:hover i {
+    color: var(--main-color);
+}
+.header__nav-danhMuc-title i,
+.header__nav-muaxe-title i {
+    margin-left: 0.3rem;
+}
+.header__nav-danhMuc-list,
+.header__nav-muaxe-list {
+    position: absolute;
+    padding-left: 1rem;
+    display: none;
+    flex-direction: column;
+    background-color: #000;
+    animation: showlistDanhMuc 0.3s ease-in forwards;
+}
+.header__nav-danhMuc-list {
+    width: 15rem;
+}
+.header__nav-muaxe-list {
+    width: 10rem;
+}
+@keyframes showlistDanhMuc {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.header__nav-danhMuc-list a:hover,
+.header__nav-muaxe-list a:hover {
+    color: var(--main-color);
+}
+.header__nav-danhMuc-list a:first-child,
+.header__nav-muaxe-list a:first-child {
+    margin-top: 2rem;
+}
+.header__nav-danhMuc-list a,
+.header__nav-muaxe-list a {
+    padding: 0.5rem 0;
+}
+.header__nav-search {
+    margin-left: 1rem;
+}
+
+#header__nav-searchInput {
+    width: 0;
+    margin-left: 0.5rem;
+    transition: width 0.5s ease-in-out;
+    color: #fff;
+    background-color: #000;
+}
+.fa-cart-shopping:hover {
+    color: var(--main-color);
+}
+.header__nav-search:hover i {
+    color: var(--main-color);
+}
+#header__nav-searchInput::placeholder {
+    color: #fff;
+}
+
+#header__nav-searchInput.showHeader__nav-searchInput {
+    width: 150px;
+}
+.header__menu {
+    color: var(--text-color);
+    display: none;
+}
+
+
+.trangchu {
+    margin-top: 80px;
+    display: flex;
+    padding: 0 7%;
+    align-items: center;
+    background-color: #000;
+}
+.trangchu h2 {
+    color: var(--main-color);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.5;
+    padding-top: 3rem;
+}
+.trangchu p {
+    margin-top: 1rem;
+}
+.trangchu__lienhe a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    background-color: transparent;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 1rem;
+    color: var(--main-color);
+    margin: 2rem 1.5rem 2.5rem 0;
+    transition: all 0.5s ease;
+}
+.trangchu__lienhe a:hover {
+    background-color: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+.trangchu__img {
+    z-index: 1;
+}
+.trangchu__img img {
+    width: 45vw;
+}
+
+
+.xemoi {
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--second-bg-color);
+}
+.xemoi h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--main-color);
+    margin-bottom: 0.5rem;
+}
+.xemoi label {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+
+
+
+.slideshow__xemoi {
+    width: 100%;
+}
+.slideshow__xemoi-me {
+    display: flex;
+    flex-direction: row;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    overflow-x: hidden;
+    padding-bottom: 2rem;
+}
+.slideshow__xemoi-me img {
+    width: 45vw;
+    height: 28vw;
+    margin-right: 1rem;
+}
+.slideshow__xemoithongso p {
+    font-family: 'Times New Roman', Times, serif;
+}
+.slideshow__xemoithongso p strong {
+    color: var(--main-color);
+}
+.slideshow__xemoithongso h3 {
+    margin: 0.5rem 0;
+    color: var(--main-color);
+}
+.slideshow__xemoithongso ul li {
+    margin: 0.2rem 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.slideshow__xemoithongso a {
+    display: flex;
+    justify-content: center;
+    width: 10rem;
+    padding: 0.5rem 1.5rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    background-color: var(--main-color);
+    color: var(--second-bg-color);
+    border-radius: 50px;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: box-shadow 0.5s ease;
+}
+.slideshow__xemoithongso a:hover {
+    box-shadow: none;
+}
+.slideshow_xemoithongso-chitiet {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+
+
+.hangtrinhbay {
+    background-color: var(--bg-color);
+    color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.hangtrinhbay h2 {
+    font-size: 28px;
+    color: var(--text-color);
+    margin-bottom: 1.2rem;
+}
+.hangtrinhbayP {
+    color: var(--text-color);
+}
+
+.hangtrinhbay__dongsanpham {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.hangtrinhbay__dongsanpham-sp {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hangtrinhbay__dongsanpham-sp img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.dongsanpham_sp1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+.dongsanpham_sp1 p {
+    border: 1.5px dashed var(--main-color);
+    border-radius: 10px;
+    padding: 0 0.5rem;
+}
+.dongsanpham_sp2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    margin: 0.5rem 0;
+}
+.dongsanpham_sp2-1 {
+    display: flex;
+    align-items: center;
+}
+.dongsanpham_sp2-1 i {
+    margin-right: 5px;
+}
+.dongsanpham_sp2 i {
+    color: var(--second-text-color);
+}
+.dongsanpham_sp3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dongsanpham_sp3 p {
+    margin: 0;
+}
+.dongsanpham_sp3 a {
+    color: #ff0000;
+}
+.dongsanpham_sp3 i {
+    color: var(--second-text-color);
+    background-color: hsl(208, 86%, 92%);
+    padding: 0.5rem;
+    border-radius: 30%;
+}
+.dongsanpham_sp2-button a {
+    background-color: var(--second-text-color);
+    padding: 0.5rem;
+    border-radius: 10px;
+    color: var(--text-color);
+}
+
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 9% 1rem 1rem;
+}
+.footer1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.footer__chiNhanh h2,
+.footer__lienKet h2,
+.footer__thongTin h2,
+.footer__mangxahoi h2 {
+    font-size: 1.5rem;
+}
+.footer__chiNhanh h2,
+.footer__lienKet h2,
+.footer__thongTin h2,
+.footer__mangxahoi h2,
+.footer__chiNhanh a i,
+.footer__lienKet a i,
+.footer__thongTin a i,
+.footer__mangxahoi a i {
+    color: var(--main-color);
+}
+.footer__chiNhanh a,
+.footer__lienKet a,
+.footer__thongTin a,
+.footer__mangxahoi a {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.footer__chiNhanh a i,
+.footer__lienKet a i,
+.footer__thongTin a i,
+.footer__mangxahoi a i {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+.footer__chiNhanh a p,
+.footer__lienKet a p,
+.footer__thongTin a p,
+.footer__mangxahoi a p {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--text-color);
+    margin: 0;
+    font-size: 1rem;
+}

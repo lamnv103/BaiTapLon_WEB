@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Page </title>
+    <link rel="stylesheet" href="./assets/css/tintuc.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        
+        <div class="nav container">
+        
+        <a href="index.html" class="logo">LV<span>TS</span></a>
+
+        <a href="./Login.html" class="login">Đăng Nhập</a>
+        </div>
+        
+    </header>
+
+    <section class="post-header">
+        <div class="header-content post-container">
+
+        <a href="index.html" class="back-home">Quay Trở Lại</a>
+
+        <h1 class="header-title">Ưu Đãi HOT!</h1>
+        
+        <img src="./assets/img/hinh6.jpg" alt="" class="header-img">
+        </div>
+    </section>
+
+    <section class="post-content post-container">
+      <h2 class="sub-heading">Giá xe Mazda2 niêm yết tháng 5/2024, từ 408 triệu đồng</h2>
+      <p class="post-text">Mazda2 là mẫu xe hạng B của thương hiệu Mazda Nhật Bản, ra mắt lần đầu tiên năm 1996 và hiện tại đang ở thế hệ thứ 4. Mazda2 chào sân thị trường Việt Nam lần đầu vào tháng 11/2011 và phiên bản nâng cấp gần nhất được giới thiệu vào nửa cuối năm 2023.
+
+        Ở phiên bản mới nhất này, Mazda2 được cải tiến theo xu hướng hiện đại và mới mẻ cho cả 3 phiên bản nhằm tăng sức cạnh tranh với các đối thủ như Toyota Vios, Honda City, Hyundai Accent, Kia Soluto, Mitsubishi Attrage, Suzuki Ciaz,..</p>
+        <p class="post-text">Mazda 2 được ứng dụng thiết kế kiến trúc dựa trên công nghệ SkyActiv mới (SkyActiv-Vehicle Architecture) với khung gầm, thân xe và lốp xe mới. Cùng với đó là hệ thống kiểm soát gia tốc GVC Plus và ghế ngồi cấu trúc mới duy trì tư thế cong tự nhiên của cột sống, mang đến cảm giác lái thú vị và thoải mái.</p>
+
+        <p class="post-text">Mazda2 được thiết kế theo ngôn ngữ KODO - Soul of Motion đặc trưng của thương hiệu. Các thông số dài x rộng x cao của xe lần lượt là 4340 x 1695 x 1470 (mm), trục cơ sở đạt 2570 mm. Cùng với đó là khoảng sáng gầm 140 mm và bán kính vòng quay tối thiểu 4.7m, giúp Mazda2 dễ dàng xoay xở trên các tuyến phố đô thị.
+
+            Ở lần nâng cấp mới nhất, ngoại thất Mazda2 mang đến cái nhìn ấn tượng hơn với cụm tản nhiệt kích thước lớn, đi cùng các họa tiết kim loại tinh tế. Viền crom quanh cụm đèn được mở rộng và ăn sâu tạo ra sự bề thế cho chiếc xe.</p>
+        <p class="post-text">Mazda 2 2024 được trang bị đèn chiếu sáng LED và đèn pha LED thích ứng. Đáng tiếc là cụm đèn sương mù đã bị cắt bỏ. Khu vực cản trước được tinh chỉnh, tạo tư thế đầm chắc và vững chãi.
+
+            Dọc thân xe là la-zăng 5 chấu kép thay cho dạng cánh hoa. Biến thể Sedan có 2 tùy chọn là 15 và 16 inch, trong khi biến thể Sport chỉ có loại 16 inch.
+            
+            Thay đổi ở phía đuôi Mazda 2 đến từ phần nhựa của cản sau đã được đẩy lên trên kết hợp với đèn phản quang tạo thành sự liền khối đầy thu hút. Cặp đèn hậu cũng sử dụng công nghệ LED hiện đại với thiết kế đẹp mắt.</p>
+    </section>
+
+    <div class="share post-container">
+        <span class="share-title">Chia Sẻ</span>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+    </div>
+
+    <section class="post container">
+    </section>
+
+    <div class="footer container">
+        <p>&#169; Thông tin liên hệ.</p>
+        <div class="social">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+        </div>
+    
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnX11h5ywQfKtSj8PCmoN9aaq30gDh27Xcθjk="
+    crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $(".filter-item").click(function () {
+            const value = $(this).attr("data-filter");
+            if (value == "all") {
+            $(".post-box").show("1000");
+            } else {
+            $(".post-box")
+             .not("." + value)
+             .hide("1000");
+            $(".post-box")
+             .filter("." + value)
+             . show( "1000");
+            }
+        });
+        
+        $(".filter-item").click(function () {
+            $(this).addClass("active-filter").siblings().removeClass("active-filter");
+            });
+        });
+            
+            let header = document.querySelector("header");
+            
+            window.addEventListener("scroll", () => {
+            header. classList.toggle("shadow", window.scrollY > 0);
+        });
+    </script>
+</body>
+</html>

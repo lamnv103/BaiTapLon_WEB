@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Thanh Toán</title>
+    <link rel="stylesheet" href="dv-bd.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 style="color: darkgoldenrod; font-size: 45px;">LVTS</h1>
+            <div class="steps">
+                <span>Giỏ Hàng</span>
+                <span>Thông Tin Khách Hàng</span>
+                <span>Phương Thức Giao Hàng</span>
+                <span>Thông Tin Thanh Toán</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="form-section">
+                <h2>THÔNG TIN KHÁCH HÀNG</h2>
+                <form id="paymentForm">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <h2>ĐỊA CHỈ GIAO HÀNG</h2>
+                    <div class="form-group">
+                        <label for="firstName">Tên</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Họ</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Công Ty (Tùy Chọn)</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Địa Chỉ</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apt">Căn Hộ, Suite, V.v (Tùy Chọn)</label>
+                        <input type="text" id="apt" name="apt">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">Thành Phố</label>
+                        <select id="city" name="city" required>
+                            <option value="">Chọn Thành Phố</option>
+                            <option value="An Giang">An Giang</option>
+                            <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu</option>
+                            <option value="Bạc Liêu">Bạc Liêu</option>
+                            <option value="Bắc Kạn">Bắc Kạn</option>
+                            <option value="Bắc Giang">Bắc Giang</option>
+                            <option value="Bắc Ninh">Bắc Ninh</option>
+                            <option value="Bến Tre">Bến Tre</option>
+                            <option value="Bình Dương">Bình Dương</option>
+                            <option value="Bình Định">Bình Định</option>
+                            <option value="Bình Phước">Bình Phước</option>
+                            <option value="Bình Thuận">Bình Thuận</option>
+                            <option value="Cà Mau">Cà Mau</option>
+                            <option value="Cao Bằng">Cao Bằng</option>
+                            <option value="Cần Thơ">Cần Thơ</option>
+                            <option value="Đà Nẵng">Đà Nẵng</option>
+                            <option value="Đắk Lắk">Đắk Lắk</option>
+                            <option value="Đắk Nông">Đắk Nông</option>
+                            <option value="Điện Biên">Điện Biên</option>
+                            <option value="Đồng Nai">Đồng Nai</option>
+                            <option value="Đồng Tháp">Đồng Tháp</option>
+                            <option value="Gia Lai">Gia Lai</option>
+                            <option value="Hà Giang">Hà Giang</option>
+                            <option value="Hà Nam">Hà Nam</option>
+                            <option value="Hà Nội">Hà Nội</option>
+                            <option value="Hà Tĩnh">Hà Tĩnh</option>
+                            <option value="Hải Dương">Hải Dương</option>
+                            <option value="Hải Phòng">Hải Phòng</option>
+                            <option value="Hậu Giang">Hậu Giang</option>
+                            <option value="Hòa Bình">Hòa Bình</option>
+                            <option value="Hưng Yên">Hưng Yên</option>
+                            <option value="Khánh Hòa">Khánh Hòa</option>
+                            <option value="Kiên Giang">Kiên Giang</option>
+                            <option value="Kon Tum">Kon Tum</option>
+                            <option value="Lai Châu">Lai Châu</option>
+                            <option value="Lâm Đồng">Lâm Đồng</option>
+                            <option value="Lạng Sơn">Lạng Sơn</option>
+                            <option value="Lào Cai">Lào Cai</option>
+                            <option value="Long An">Long An</option>
+                            <option value="Nam Định">Nam Định</option>
+                            <option value="Nghệ An">Nghệ An</option>
+                            <option value="Ninh Bình">Ninh Bình</option>
+                            <option value="Ninh Thuận">Ninh Thuận</option>
+                            <option value="Phú Thọ">Phú Thọ</option>
+                            <option value="Phú Yên">Phú Yên</option>
+                            <option value="Quảng Bình">Quảng Bình</option>
+                            <option value="Quảng Nam">Quảng Nam</option>
+                            <option value="Quảng Ngãi">Quảng Ngãi</option>
+                            <option value="Quảng Ninh">Quảng Ninh</option>
+                            <option value="Quảng Trị">Quảng Trị</option>
+                            <option value="Sóc Trăng">Sóc Trăng</option>
+                            <option value="Sơn La">Sơn La</option>
+                            <option value="Tây Ninh">Tây Ninh</option>
+                            <option value="Thái Bình">Thái Bình</option>
+                            <option value="Thái Nguyên">Thái Nguyên</option>
+                            <option value="Thanh Hóa">Thanh Hóa</option>
+                            <option value="Thừa Thiên Huế">Thừa Thiên Huế</option>
+                            <option value="Tiền Giang">Tiền Giang</option>
+                            <option value="TP. Hồ Chí Minh">TP. Hồ Chí Minh</option>
+                            <option value="Trà Vinh">Trà Vinh</option>
+                            <option value="Tuyên Quang">Tuyên Quang</option>
+                            <option value="Vĩnh Long">Vĩnh Long</option>
+                            <option value="Vĩnh Phúc">Vĩnh Phúc</option>
+                            <option value="Yên Bái">Yên Bái</option>
+                        </select>
+                    </div>
+                    
+
+                    <div class="form-group">
+                        <label for="country">Quốc Gia</label>
+                        <select id="country" name="country" required>
+                            <option value="Vietnam">Việt Nam</option>
+                            <!-- Add more countries as needed -->
+                        </select>
+
+
+                    </div>
+                    <div class="form-group">
+                        <label for="postalCode">Mã Bưu Chính</label>
+                        <input type="text" id="postalCode" name="postalCode" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">Điện Thoại</label>
+                        <input type="tel" id="telephone" name="telephone" required>
+                    </div>
+                    <button type="submit">Tiếp Tục</button>
+                </form>
+                <a href="inf.html" class="return">Quay lại giỏ hàng</a>
+
+
+
+            </div>
+            <div class="cart-section">
+                <h2>GIỎ HÀNG CỦA BẠN</h2>
+                <div class="cart-item">
+                    <img id="productImage" src="anh/part1.png" alt="Product Image">
+                    <div>
+                        <p id="productName">BMW I8</p>
+                        <p id="productPrice">$7.200.000.000 VND</p>
+                    </div>
+                </div>
+                <div class="discount">
+                    <input type="text" id="discountCode" placeholder="Nhập mã giảm giá">
+                    <button type="button" onclick="applyDiscount()">Áp dụng</button>
+                </div>
+                <div class="summary">
+                    <p>Tạm Tính: <span id="subtotal">  $7.200.000.000 VND</span></p>
+                    <p>Thuế VAT: <span id="vat">    2,222,272 VND</span></p>
+                    <p>Vận Chuyển: <span id="shipping"> 0,000 VND</span></p>
+                    <h3 style="color: red;"><strong>Tổng Cộng: <span id="total">$7.200.000.000 VND</span></strong></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dv-bd.js"></script>
+</body>
+</html>

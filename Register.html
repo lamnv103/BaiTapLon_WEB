@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./assets/css/Register.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section class="home">
+        
+        <div class="content">
+            <h2>CARS SALE SHOP</h2>
+            <p>Không chỉ là một đại lý xe hơi, chúng tôi là một gia đình. Chúng ta đam mê xe hơi, và điều đó cho thấy.</p>
+            <a href="#" class="btn"><span>Get Started</span></a>
+        </div>
+        <div class="wrapper-login">
+            <h2>Đăng kí</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Nhập email của bạn</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Nhập mật khẩu của bạn</label>
+                </div>
+                
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Nhập lại mật khẩu của bạn</label>
+                </div>
+                <button type="submit" class="btn"> <span>Đăng kí</span> </button>
+                <div class="register-link">
+                    <p><a href="Login.html"> Quay về đăng nhập ?</a></p>
+                </div>
+            </form>
+        </div>
+        </div>
+
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '100px',
+            duration: 2000,
+            delay: 200,
+        });
+
+        ScrollReveal().reveal('', {origin: 'top'});
+        ScrollReveal().reveal('.wrapper-login h2', {origin: 'right'});
+        ScrollReveal().reveal('.input-box, .remember-forgot, .wrapper-login .btn, .register-link', {origin: 'bottom'});
+        ScrollReveal().reveal('', {origin: 'left'});
+    </script>
+</body>
+
+</html>

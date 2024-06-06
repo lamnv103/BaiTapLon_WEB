@@ -1,0 +1,156 @@
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #ffffffe2;
+    --main-color: #00fbff;
+}
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 1200px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 992px) { 
+    .trangchu {
+        margin-top: 63px;
+        padding: 2rem 0;
+        padding-left: 0.5rem;
+    }
+    .trangchu__noidung h2 {
+        font-size: 2rem;
+    }
+    .trangchu__noidung h3 {
+        font-size: 1.3rem;
+    }
+    .trangchu__lienhe a {
+        margin: 0 0.25rem;
+    }
+
+    .slideshow__xemoi-me {
+        flex-direction: column;
+    }
+    .slideshow__xemoi-meImg {
+        display: flex;
+        justify-content: center;
+    }
+    .slideshow__xemoithongso {
+        margin-left: 0.5rem;
+    }
+    .hangtrinhbay__dongsanpham {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 768px) { 
+    .header__nav {
+        position: absolute;
+        flex-direction: column;
+        top: 3rem;
+        right: 0;
+        background-color: var(--second-bg-color);
+        width: 15rem;
+        display: none;
+        height: 100vw;
+    }
+    .header__menu {
+        display: block;
+        margin-right: 1rem;
+    }
+    .header__nav-danhMuc-list,
+    .header__nav-muaxe-list {
+        position: static;
+        background-color: var(--second-bg-color);
+        width: 10rem;
+    }
+    .header__nav-danhMuc,
+    .header__nav-muaxe,
+    .header__nav-tc,
+    .header__nav-dn,
+    .header__nav-dk {
+        margin-left: 0.5rem;
+        padding: 0.5rem 0;
+    }
+    .header__nav-danhMuc-list a:first-child,
+    .header__nav-muaxe-list a:first-child {
+        margin-top: 0;
+    }
+
+    .trangchu {
+        margin-top: 46px;
+        padding: 2rem 0;
+        padding-left: 0.5rem;
+    }
+
+    .slideshow__xemoi-meImg img {
+        width: 50vw;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__thongTin,
+    .footer__mangxahoi {
+        padding-top: 1rem;
+    }
+}
+
+@media (max-width: 670px) {
+    .trangchu {
+        flex-direction: column-reverse;
+    }
+    .trangchu__noidung h2,
+    .trangchu__noidung h3,
+    .trangchu__noidung p:first-child {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .trangchu__lienhe {
+        display: flex;
+        justify-content: center;
+    }
+    .trangchu__lienhe a {
+        margin-right: 0.5rem;
+    }
+    .trangchu__lienhe a:last-child {
+        margin-right: 0;
+    }
+    .hangtrinhbay__dongsanpham {
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hangtrinhbay__dongsanpham-sp {
+        width: 19rem;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .trangchu {
+        margin-top: 36px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__chiNhanh,
+    .footer__lienKet,
+    .footer__thongTin,
+    .footer__mangxahoi {
+        padding-top: 1rem;
+    }
+}
+@media (max-width: 430px) {
+    .trangchu {
+        margin-top: 36px;
+    }
+}
+@media (max-width: 390px) {
+
+}

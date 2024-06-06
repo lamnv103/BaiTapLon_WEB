@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="./assets/css/tintuc.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/dv-bd.css">
+</head>
+<body>
+    <header>
+        <div class="header container">
+            <img class="header_logo col-lg-2 col-md-2 col-sm-2 col-2" src="./assets/img/logo.png" alt="">
+            <nav class="col-auto d-flex align-items-center">
+                <i class="fa-solid fa-bars header__menu" id="menuIcon"></i>
+                <div class="header__nav">
+                    <a href="" class="header__nav-tc">Trang Chủ</a>
+                    <div class="header__nav-danhMuc">
+                        <div class="header__nav-danhMuc-title">
+                            <p class="m-0">Danh Mục</p>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="header__nav-danhMuc-list">
+                            <a href="#">Giới thiệu</a>
+                            <a href="#tintuc_khuyenmai">Tin tức & Khuyến mãi</a>
+                            <a href="#xemoi">Xe mới</a>
+                            <a href="#cars">Dịch vụ & Bảo dưỡng</a>
+                        </div>
+                    </div>
+                    <div class="header__nav-muaxe">
+                        <div class="header__nav-muaxe-title">
+                            <p class="m-0">Mua xe</p>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="header__nav-muaxe-list">
+                            <a href="./Vin.html">Vinfast</a>
+                            <a href="./Por.html">Porsche</a>
+                            <a href="./merc.html">Mercedes</a>
+                            <a href="">BMW</a>
+                            <a href="">Audi</a>
+                            <a href="./lexus.html">Lexus</a>
+                        </div>
+                    </div>
+                    <a href="./Login.html" class="header__nav-dn">Đăng Nhập</a>
+                    <a href="./Register.html" class="header__nav-dk">Đăng Ký</a>
+                </div>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <div class="header__nav-search">
+                    <i class="fa-solid fa-magnifying-glass" id="header__nav-searchIcon"></i>
+                    <input type="text" placeholder="Tìm kiếm..." id="header__nav-searchInput">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="trangchu" id="trangchu">
+        <div class="trangchu__noidung">
+            <h2>CAR SALES SHOP</h2>
+            <h3>XIN CHÀO BẠN</h3>
+            <p>Chúng tôi sẽ giúp bạn <span class="trangchu__dongchu"></span></p>
+            <p>SĐT: <span style="color: #00fbff;">+84912345678</span></p>
+            <p>Địa chỉ: <span style="color: #00fbff;">470 Đường Trần Đại Nghĩa, Khu đô thị, Ngũ Hành Sơn, Đà Nẵng</span></p>
+            <div class="trangchu__lienhe">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-discord"></i></a>
+            </div>
+        </div>
+        <div class="trangchu__img">
+            <img src="./assets/img/car.png" alt="">
+        </div>
+    </section>
+
+    <section class="home1" id="home">
+        <div class="home-text1">
+            <h2 class="home-title">Thông Tin & Ưu Đãi</h2>
+            <span class="home-subtitle">Đem đến những thông tin chính xác cho khách hàng. Ưu đãi khủng ! </span>
+        </div>
+    </section>
+        
+    <div class="post-filter container">
+        <span class="filter-item active-filter" data-filter='all'>Tất Cả</span>
+        <span class="filter-item" data-filter='design'>Tin Tức</span>
+        <span class="filter-item" data-filter='tech'>Khuyến Mãi</span>
+    </div>
+
+    <section class="post container" id="tintuc_khuyenmai">
+        <!--1-->
+        <div class="post-box design">
+            <img src="./assets/img/post-1.webp" alt="" class="post-img">
+            <h2 class="category">Tin Tức</h2>
+            <a href="post-page.html" class="post-title">
+                Honda Civic 2025 thêm bản hybrid mạnh chỉ dưới Type R, có phanh tái tạo như xe điện, hết mang danh 'ồn nhất phân khúc'
+            </a>
+            <span class="post-date">22/05/2024</span>
+            <p class="post-decription">Tin tức mới nhất.
+            <div class="profile">
+                <img src="./assets/img/nguoi.webp" alt="" class="profile-img">
+                <span class="profile-name">Trần Vương</span>
+            </div>
+        </div>
+        <!--2-->
+        <div class="post-box tech">
+            <img src="./assets/img/post-2.webp" alt="" class="post-img">
+            <h2 class="category">Khuyến Mãi</h2>
+            <a href="he.html" class="post-title">
+                Đại lý xả kho Mitsubishi Pajero Sport: Giảm sâu tới 269 triệu đồng, rẻ ngang 'SUV C quốc dân' CX-5 bản cao
+            </a>
+            <span class="post-date">22/05/2024</span>
+            <p class="post-decription">Tin tức mới nhất.
+            <div class="profile">
+            <img src="./assets/img/nguoi1.jpg" alt="" class="profile-img">
+            <span class="profile-name">Nguyễn Thị Hồng</span>
+            </div>
+        </div>
+        <!--3-->
+        <div class="post-box design">
+            <img src="./assets/img/post-3.webp" alt="" class="post-img">
+            <h2 class="category">Tin Tức</h2>
+            <a href="ne.html" class="post-title">
+                BMW 7-Series chạy 19.000km rao bán đắt hơn mua mới nhưng sẽ rẻ hơn nửa tỷ đồng nếu lăn bánh
+            </a>
+            <span class="post-date">21/05/2024</span>
+            <p class="post-decription">Tin Tức mới nhất.
+            <div class="profile">
+                <img src="./assets/img/nguoi3.png" alt="" class="profile-img">
+                <span class="profile-name">Lê Nguyên</span>
+            </div>
+        </div>
+        <!--4-->
+        <div class="post-box tech">
+            <img src="./assets/img/post-4.jpg" alt="" class="post-img">
+            <h2 class="category">Khuyến Mãi</h2>
+            <a href="pose.html" class="post-title">
+                Giá xe Mazda2 niêm yết tháng 5/2024, từ 408 triệu đồng
+            </a>
+            <span class="post-date">12/04/2024</span>
+            <p class="post-decription">Khuyến Mãi !!!
+            <div class="profile">
+                <img src="./assets/img/nguoi4.jpg" alt="" class="profile-img">
+                <span class="profile-name">Tố Quân</span>
+            </div>
+        </div>
+            <!--5-->
+        <div class="post-box design">
+            <img src="./assets/img/post-5.jpg" alt="" class="post-img">
+            <h2 class="category">Khuyến Mãi</h2>
+            <a href="ki.html" class="post-title">
+                Mẫu xe "quốc dân" Toyota Vios được giảm giá từ 21-47 triệu đồng tùy phiên bản.
+            </a>
+            <span class="post-date"> 03/2024</span>
+            <p class="post-decription">Khuyến Mãi Tháng 3
+            <div class="profile">
+                <img src="./assets/img/nguoi5.jpg" alt="" class="profile-img">
+                <span class="profile-name">Ngô Vân</span>
+            </div>
+        </div>
+        <!--6-->
+        <div class="post-box tech">
+            <img src="./assets/img/post-6.jpg" alt="" class="post-img">
+            <h2 class="category">Khuyến Mãi</h2>
+            <a href="ha.html" class="post-title">
+                Toyota ưu đãi cho Corolla Cross 2024 với gói gia hạn bảo hành 2 năm/50.000 km (tùy điều kiện nào đến trước). Riêng đối với phiên bản Corolla Cross HEV (dòng xe hybrid), người mua có thêm gói gia hạn bảo hành cho pin là 4 năm/50.000 km (tùy điều kiện nào đến trước). Như vậy, tổng thời gian bảo hành của xe Corolla Cross lên tới 5 năm/150.000 km (tùy điều kiện nào đến trước) và thời gian bảo hành cho pin trên phiên bản HEV sẽ là 7 năm/150.000 km (tùy điều kiện nào đến trước).
+            </a>
+            <span class="post-date">Từ ngày 6-5 đến hết ngày 31-12-2024</span>
+            <p class="post-decription">Khuyễn Mãi Cực Hot
+            <div class="profile">
+                <img src="./assets/img/nguoi6.webp" alt="" class="profile-img">
+                <span class="profile-name">Thu Hà</span>
+            </div>
+        </div>
+            <!--7-->
+        <div class="post-box design">
+            <img src="./assets/img/post-7.webp" alt="" class="post-img">
+            <h2 class="category">Tin Tức</h2>
+            <a href="hu.html" class="post-title">
+                CEO Lamborghini 'chê' siêu xe điện thiếu cảm xúc, bán không chạy, còn cần chờ quan sát thêm, 'siêu bò' trước mắt cứ làm hybrid trước đã
+            </a>
+            <span class="post-date">22/05/2024 06:49 AM</span>
+            <p class="post-decription">Tin Tức
+            <div class="profile">
+                <img src="./assets/img/nguoi8.jpg" alt="" class="profile-img">
+                <span class="profile-name">Hiếu Nguyễn</span>
+            </div>
+        </div>
+            <!--8-->
+        <div class="post-box design">
+            <img src="./assets/img/post-8.webp" alt="" class="post-img">
+            <h2 class="category">Bản Giá </h2>
+            <a href="hs.html" class="post-title">
+                Giá xe Toyota Vios kèm ưu đãi hấp dẫn tháng 5/2024
+            </a>
+            <span class="post-date">5/2024</span>
+            <p class="post-decription">Khuyến Mãi
+            <div class="profile">
+            <img src="./assets/img/nguoi7.jpg" alt="" class="profile-img">
+            <span class="profile-name">Khả Như</span>
+            </div>
+        </div>
+        <!--9-->
+        <div class="post-box design">
+            <img src="./assets/img/post-9.jpg" alt="" class="post-img">
+            <h2 class="category">Tin Tức</h2>
+            <a href="ga.html" class="post-title">
+                Hyundai Santa Fe giảm giá đến 100 triệu đồng trong tháng 5
+            </a>
+            <span class="post-date">05/2024</span>
+            <p class="post-decription">Khuyến Mãi
+            <div class="profile">
+            <img src="./assets/img/nguoi2.webp" alt="" class="profile-img">
+            <span class="profile-name">Lâm Anh</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="xemoi" id="xemoi">
+        <h2>XE MỚI RA MẮT 2024</h2>
+        <label>Khám phá những mẫu xe đỉnh cao nhất</label>
+        <div class="slideshow__xemoi" style="overflow-x: hidden;">
+            <div class="swiper-wrapper">
+                <div class="slideshow__xemoi-me swiper-slide">
+                    <div class="slideshow__xemoi-meImg">
+                        <img src="./assets/img/VinFast-e34-250321-02.jpg" alt="VinFast VF e34">
+                    </div>
+                    <div class="slideshow__xemoithongso">
+                        <p><strong>VinFast VF e34</strong> là mẫu xe ô tô điện tiên tiến của VinFast, kết hợp giữa thiết kế hiện đại và công nghệ tiên tiến, mang lại trải nghiệm lái xe thân thiện với môi trường và tiện nghi tối đa.</p>
+                        <h3>Thông Số Kỹ Thuật</h3>
+                        <ul>
+                            <li><strong>Động Cơ:</strong> Điện</li>
+                            <li><strong>Công Suất:</strong> 110 kW (147 mã lực)</li>
+                            <li><strong>Pin:</strong> Lithium-ion 42 kWh</li>
+                            <li><strong>Phạm Vi Hoạt Động:</strong> 285 km mỗi lần sạc</li>
+                            <li><strong>Thời Gian Sạc:</strong> 18 phút sạc nhanh cho 180 km</li>
+                        </ul>
+                        <h3>Tính Năng Nổi Bật</h3>
+                        <p>VinFast VF e34 sở hữu nhiều tính năng hiện đại như hệ thống điều khiển giọng nói, màn hình giải trí 10 inch, hệ thống lái tự động cấp 2, và nhiều tính năng an toàn tiên tiến như cảnh báo va chạm, giữ làn đường và kiểm soát hành trình.</p>
+                        <div class="slideshow_xemoithongso-chitiet">
+                            <a href="#">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="slideshow__xemoi-me swiper-slide">
+                    <div class="slideshow__xemoi-meImg">
+                        <img src="./assets/img/2uz2mvyb.png" alt="Porsche Cayenne 2024">
+                    </div>
+                    <div class="slideshow__xemoithongso">
+                        <p><strong>Porsche Cayenne 2024</strong> là mẫu SUV sang trọng của Porsche, kết hợp giữa thiết kế hiện đại, công nghệ tiên tiến và hiệu suất vượt trội, mang lại trải nghiệm lái xe đẳng cấp và tiện nghi tối đa.</p>
+                        <h3>Thông Số Kỹ Thuật</h3>
+                        <ul>
+                            <li><strong>Động Cơ:</strong> Tùy chọn V6 và V8, bao gồm cả biến thể hybrid</li>
+                            <li><strong>Công Suất:</strong> Từ 335 hp đến 541 hp</li>
+                            <li><strong>Hệ Dẫn Động:</strong> AWD</li>
+                            <li><strong>Nội Thất:</strong> Da cao cấp, màn hình cảm ứng 12.3 inch</li>
+                            <li><strong>Tiện Nghi:</strong> Hệ thống âm thanh Bose, điều hòa tự động 4 vùng</li>
+                        </ul>
+                        <h3>Tính Năng Nổi Bật</h3>
+                        <p>Porsche Cayenne 2024 sở hữu nhiều tính năng hiện đại như hệ thống điều khiển giọng nói, màn hình giải trí 12.3 inch, hệ thống lái tự động cấp 2, và nhiều tính năng an toàn tiên tiến như cảnh báo va chạm, giữ làn đường và kiểm soát hành trình.</p>
+                        <div class="slideshow_xemoithongso-chitiet">
+                            <a href="#">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="slideshow__xemoi-me swiper-slide">
+                    <div class="slideshow__xemoi-meImg">
+                        <img src="./assets/img/MercedesSlide.jpg" alt="Mercedes-Benz E-Class 2024">
+                    </div>
+                    <div class="slideshow__xemoithongso">
+                        <p><strong>Mercedes-Benz E-Class 2024</strong> mang đến sự kết hợp hoàn hảo giữa thiết kế sang trọng, công nghệ tiên tiến và hiệu suất mạnh mẽ, tạo nên một chiếc sedan đẳng cấp phù hợp cho cả công việc và giải trí.</p>
+                        <h3>Thông Số Kỹ Thuật</h3>
+                        <ul>
+                            <li><strong>Động Cơ:</strong> Tùy chọn động cơ I4 và I6, bao gồm cả biến thể hybrid</li>
+                            <li><strong>Công Suất:</strong> Từ 255 hp đến 429 hp</li>
+                            <li><strong>Hệ Dẫn Động:</strong> AWD</li>
+                            <li><strong>Nội Thất:</strong> Da cao cấp, màn hình cảm ứng 12.3 inch</li>
+                            <li><strong>Tiện Nghi:</strong> Hệ thống âm thanh Burmester, điều hòa tự động 4 vùng</li>
+                        </ul>
+                        <h3>Tính Năng Nổi Bật</h3>
+                        <p>Mercedes-Benz E-Class 2024 trang bị nhiều tính năng hiện đại như hệ thống điều khiển giọng nói MBUX, màn hình kép 12.3 inch, hệ thống lái tự động cấp 2, và các tính năng an toàn tiên tiến như cảnh báo va chạm, hỗ trợ giữ làn đường và kiểm soát hành trình.</p>
+                        <div class="slideshow_xemoithongso-chitiet">
+                            <a href="#">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="slideshow__xemoi-me swiper-slide">
+                    <div class="slideshow__xemoi-meImg">
+                        <img src="./assets/img/640-xe-dien-bmw-i5.jpg" alt="BMW i5 2024">
+                    </div>
+                    <div class="slideshow__xemoithongso">
+                        <p><strong>BMW i5 2024</strong> là mẫu xe điện hoàn toàn mới của BMW, kết hợp giữa thiết kế sang trọng, công nghệ tiên tiến và hiệu suất mạnh mẽ, mang đến một trải nghiệm lái xe thân thiện với môi trường và đẳng cấp.</p>
+                        <h3>Thông Số Kỹ Thuật</h3>
+                        <ul>
+                            <li><strong>Động Cơ:</strong> Động cơ điện kép</li>
+                            <li><strong>Công Suất:</strong> Lên tới 536 hp</li>
+                            <li><strong>Phạm Vi Hoạt Động:</strong> Khoảng 300 dặm (480 km)</li>
+                            <li><strong>Nội Thất:</strong> Da cao cấp, màn hình cảm ứng 14.9 inch</li>
+                            <li><strong>Tiện Nghi:</strong> Hệ thống âm thanh Harman Kardon, điều hòa tự động 4 vùng</li>
+                        </ul>
+                        <h3>Tính Năng Nổi Bật</h3>
+                        <p>BMW i5 2024 được trang bị nhiều tính năng hiện đại như hệ thống điều khiển giọng nói, màn hình kép 14.9 inch và 12.3 inch, hệ thống lái tự động cấp 2, và các tính năng an toàn tiên tiến như cảnh báo va chạm, hỗ trợ giữ làn đường và kiểm soát hành trình.</p>
+                        <div class="slideshow_xemoithongso-chitiet">
+                            <a href="#">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hangtrinhbay">
+        <h2>Khám phá các dòng xe của chúng tôi</h2>
+        <p class="hangtrinhbayP">Chúng tôi tự hào giới thiệu những dòng xe chất lượng cao, đáp ứng mọi nhu cầu di chuyển của bạn</p>
+
+        <div class="hangtrinhbay__dongsanpham">
+            
+            <div class="hangtrinhbay__dongsanpham-sp">
+                <img src="./anh/2023-vinfast-vf6.jpg" alt="VinFast VF 3">
+                <div class="dongsanpham_sp1">
+                    <h3>VinFast VF6</h3>
+                    <p>2023</p>
+                </div>
+                <div class="dongsanpham_sp2">
+                    <div class="dongsanpham_sp2-1">
+                        <i class="fa-solid fa-users"></i>
+                        <span>5 chỗ ngồi</span>
+                    </div>
+                    <div class="dongsanpham_sp2-1">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>Electricity</span>
+                    </div>
+                    <div class="dongsanpham_sp2-1">
+                        <i class="fa-solid fa-gauge"></i>
+                        <span>399km/1 lần sạc</span>
+                    </div>
+                    <div class="dongsanpham_sp2-1">
+                        <i class="fa-solid fa-microchip"></i>
+                        <span>Automatic</span>
+                    </div>
+                </div>
+                <div class="dongsanpham_sp3">
+                    <div class="dongsanpham_sp3-span">
+                        <p>1.000.000.000 VND</p>
+                        <a href="">Xem chi tiết</a>
+                    </div>
+                    <div class="dongsanpham_sp2-button">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="">Đặt Hàng</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hangtrinhbay__dongsanpham-sp">
+                <img src="./anh/porsche718.jpg" alt="VinFast VF 3">
+                <div class="dongsanpham_sp1">
+                    <h3>Porsche 718</h3>
+                    <p>2016</p>
+                </div>
+                <div class="dongsanpham_sp2">
+                    <div class="dongsanpham_sp2-1">
+                        <i class="fa-solid fa-users"></i>
+                        <span>2 chỗ ngồi</span>
+                    </div>
+                    <div class="dongsanpham_sp2-1">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>Gasoline</span>
+                    </div>
+                    <div class="dongsanpham_sp2-1">
+                        <i class="fa-solid fa-gauge"></i>
+                        <span>8.1 l/100km</span>
+                    </div>
+                    <div class="dongsanpham_sp2-1">
+                        <i class="fa-solid fa-microchip"></i>
+                        <span>PDK 7 cấp</span>
+                    </div>
+                </div>
+                <div class="dongsanpham_sp3">
+                    <div style="display: flex; flex-direction: column; align-items: start;">
+                        <p>1.000.000.000 VND</p>
+                        <a href="">Xem chi tiết</a>
+                    </div>
+                    <div class="dongsanpham_sp2-button">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="">Đặt Hàng</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hangtrinhbay__dongsanpham-sp">
+                <img src="./anh/MERce.jpg" alt="VinFast VF 3">
+                <div class="dongsanpham_sp1">
+                    <h3>Vision Gran Turismo</h3>
+                    <p>2013</p>
+                </div>
+                <div class="dongsanpham_sp2">
+                    <div class="dongsanpham_sp2-1">
+                        <i class="fa-solid fa-users"></i>
+                        <span>2 chỗ ngồi</span>
+                    </div>
+                    <div class="dongsanpham_sp2-1">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>Gasoline</span>
+                    </div>
+                    <div class="dongsanpham_sp2-1">
+                        <i class="fa-solid fa-gauge"></i>
+                        <span>8,5 l/100km</span>
+                    </div>
+                    <div class="dongsanpham_sp2-1">
+                        <i class="fa-solid fa-microchip"></i>
+                        <span>Ly hợp kép 7 cấp</span>
+                    </div>
+                </div>
+                <div class="dongsanpham_sp3">
+                    <div style="display: flex; flex-direction: column; align-items: start;">
+                        <p>1.000.000.000 VND</p>
+                        <a href="">Xem chi tiết</a>
+                    </div>
+                    <div class="dongsanpham_sp2-button">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="">Đặt Hàng</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hangtrinhbay__dongsanpham-sp">
+                <img src="./anh/BMWi8.jpg" alt="VinFast VF 3">
+                <div class="dongsanpham_sp1">
+                    <h3>BMW i8</h3>
+                    <p>2014</p>
+                </div>
+                <div class="dongsanpham_sp2">
+                    <div class="dongsanpham_sp2-1">
+                        <i class="fa-solid fa-users"></i>
+                        <span>2 ghế ngồi</span>
+                    </div>
+                    <div class="dongsanpham_sp2-1">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>Gasoline</span>
+                    </div>
+                    <div class="dongsanpham_sp2-1">
+                        <i class="fa-solid fa-gauge"></i>
+                        <span>8,7 l/100km</span>
+                    </div>
+                    <div class="dongsanpham_sp2-1">
+                        <i class="fa-solid fa-microchip"></i>
+                        <span>6 AT</span>
+                    </div>
+                </div>
+                <div class="dongsanpham_sp3">
+                    <div style="display: flex; flex-direction: column; align-items: start;">
+                        <p>$7.200.000.000 VND</p>
+                        <a href="">Xem chi tiết</a>
+                    </div>
+                    <div class="dongsanpham_sp2-button">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="./inf.html">Đặt Hàng</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hangtrinhbay__dongsanpham-sp">
+                <img src="./anh/audi.jpg" alt="VinFast VF 3">
+                <div class="dongsanpham_sp1">
+                    <h3>Audi R8</h3>
+                    <p>2006</p>
+                </div>
+                <div class="dongsanpham_sp2">
+                    <div class="dongsanpham_sp2-1">
+                        <i class="fa-solid fa-users"></i>
+                        <span>5 chỗ ngồi</span>
+                    </div>
+                    <div class="dongsanpham_sp2-1">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>Gasoline</span>
+                    </div>
+                    <div class="dongsanpham_sp2-1">
+                        <i class="fa-solid fa-gauge"></i>
+                        <span>12.3 l/100 km</span>
+                    </div>
+                    <div class="dongsanpham_sp2-1">
+                        <i class="fa-solid fa-microchip"></i>
+                        <span>6 cấp</span>
+                    </div>
+                </div>
+                <div class="dongsanpham_sp3">
+                    <div style="display: flex; flex-direction: column; align-items: start;">
+                        <p>1.000.000.000 VND</p>
+                        <a href="">Xem chi tiết</a>
+                    </div>
+                    <div class="dongsanpham_sp2-button">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="">Đặt Hàng</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hangtrinhbay__dongsanpham-sp">
+                <img src="./anh/2021-lexus-lc-500-convertible-1-1595983849-141213.jpg" alt="VinFast VF 3">
+                <div class="dongsanpham_sp1">
+                    <h3>Lexus LC500</h3>
+                    <p>2016</p>
+                </div>
+                <div class="dongsanpham_sp2">
+                    <div class="dongsanpham_sp2-1">
+                        <i class="fa-solid fa-users"></i>
+                        <span>4 chỗ ngồi</span>
+                    </div>
+                    <div class="dongsanpham_sp2-1">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>Gasoline</span>
+                    </div>
+                    <div class="dongsanpham_sp2-1">
+                        <i class="fa-solid fa-gauge"></i>
+                        <span>12 l/100km</span>
+                    </div>
+                    <div class="dongsanpham_sp2-1">
+                        <i class="fa-solid fa-microchip"></i>
+                        <span>112</span>
+                    </div>
+                </div>
+                <div class="dongsanpham_sp3">
+                    <div style="display: flex; flex-direction: column; align-items: start;">
+                        <p>1.000.000.000 VND</p>
+                        <a href="">Xem chi tiết</a>
+                    </div>
+                    <div class="dongsanpham_sp2-button">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="">Đặt Hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cars" id="cars">
+        <div class="heading">
+            <span class="headingSPAN">Chính sách báo dưỡng</span>
+            <h2>Hãy trãi nghiệm dịch vụ một cách tốt nhất</h2>
+            <p>Hãy thường xuyên bảo trì xe vì an toàn của mình và cộng đồng</p>
+        </div>
+    
+    
+        <div class="cars-container container mt-2 p-2">
+    
+            <div class="box">
+                <img src="./assets/img/1.jpg" alt="">
+                <h2>Xem xét</h2>
+            </div>
+    
+            <div class="box">
+                <img src="./assets/img/2.jpg" alt="">
+                <h2>Xem xét</h2>
+            </div>
+    
+            <div class="box">
+                <img src="./assets/img/3.jpg" alt="">
+                <h2>Xem xét</h2>
+            </div>
+    
+            <div class="box">
+                <img src="./assets/img/4.jpg" alt="">
+                <h2>Xem xét</h2>
+            </div>
+    
+            <div class="box">
+                <img src="./assets/img/5.jpg" alt="">
+                <h2>Xem xét</h2>
+            </div>
+    
+            <div class="box">
+                <img src="./assets/img/6.jpg" alt="">
+                <h2>Xem xét</h2>
+            </div>
+        </div>
+    </section>
+    
+    <hr style="width: 95%; margin: 0 auto; border: 2px; height: 2px; background-color: #06daff;">
+    
+    
+    <section class="about container" id=" about">
+        <div class="about-img">
+            <img src="./assets/img/KN.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <span>CHÚNG TA LÀ AI</span>
+            <h2>Chúng tôi có 25 năm kinh nghiệm trong lĩnh vực này</h2>
+            <p>Với bề dày lịch sử kéo dài 25 năm, cam kết của chúng tôi về sự xuất sắc trong lĩnh vực dịch vụ ô tô là không thể lay chuyển.
+            Đội ngũ dày dặn kinh nghiệm của chúng tôi có nhiều kinh nghiệm để đảm bảo xe của bạn nhận được sự chăm sóc tốt nhất. Hãy tin tưởng vào chuyên môn của chúng tôi để giúp xe của bạn vận hành êm ái và an toàn.</p>
+        
+            <a href="#" class="btn">Đọc thêm</a>
+    
+        </div>
+    </section>
+    
+    <section class="parts" id ="parts">
+        <div class="heading">
+            <span>Sản Phẩm Cung Cấp</span>
+            <h2>Xe Và Sản Phẩm Chúng Tôi Luôn Xuất Sắc</h2>
+            <p>Cung cấp sản tốt và chắc lượng đến cho mọi người đó là niềm vui của chúng tôi</p>
+        </div>
+    
+        <div class="parts-container container">
+    
+            <div class="box">
+                <img src="./assets/img/part1.png" alt="">
+                <h3>Phụ Tùng Ô Tô</h3>
+                <span>2.999.000 $</span>
+                <i class='bx bxs-star'>(6 Sản Phẩm)</i>
+                <a href="#" class="btn">Mua ngay</a>
+                <a href="#" class="details">Xem chi tiết</a>
+            </div>
+    
+            <div class="box">
+                <img src="./assets/img/part2.png" alt="">
+                <h3>Phụ Tùng Ô Tô</h3>
+                <span>2.999.000 $</span>
+                <i class='bx bxs-star'>(6 Sản Phẩm)</i>
+                <a href="#" class="btn">Mua ngay</a>
+                <a href="#" class="details">Xem chi tiết</a>
+            </div>
+    
+            <div class="box">
+                <img src="./assets/img/part3.png" alt="">
+                <h3>Phụ Tùng Ô Tô</h3>
+                <span>2.999.000 $</span>
+                <i class='bx bxs-star'>(6 Sản Phẩm)</i>
+                <a href="#" class="btn">Mua ngay</a>
+                <a href="#" class="details">Xem chi tiết</a>
+            </div>
+    
+            <div class="box">
+                <img src="./assets/img/part4.png" alt="">
+                <h3>Phụ Tùng Ô Tô</h3>
+                <span>2.999.000 $</span>
+                <i class='bx bxs-star'>(6 Sản Phẩm)</i>
+                <a href="#" class="btn">Mua ngay</a>
+                <a href="#" class="details">Xem chi tiết</a>
+            </div>
+    
+            <div class="box">
+                <img src="./assets/img/part5.png" alt="">
+                <h3>Phụ Tùng Ô Tô</h3>
+                <span>2.999.000 $</span>
+                <i class='bx bxs-star'>(6 Sản Phẩm)</i>
+                <a href="#" class="btn">Mua ngay</a>
+                <a href="#" class="details">Xem chi tiết</a>
+            </div>
+    
+            <div class="box">
+                <img src="./assets/img/part6.png" alt="">
+                <h3>Phụ Tùng Ô Tô</h3>
+                <span>2.999.000 $</span>
+                <i class='bx bxs-star'>(6 Sản Phẩm)</i>
+                <a href="#" class="btn">Mua ngay</a>
+                <a href="#" class="details">Xem chi tiết</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="reviews" id="reviews">
+        <div class="heard container">
+            <Span>Đánh giá</Span>
+            <h2>Khách hàng đánh giá</h2>
+        </div>
+
+        <div class="review-container container">
+            <!-- 1 -->
+            <div class="rev-box">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                    <p>Tôi rất hài lòng với dịch vụ bảo dưỡng xe tại đây.
+                            Đội ngũ kỹ thuật viên rất chuyên nghiệp và tận tâm.
+                            Xe của tôi đã hoạt động êm ái hơn hẳn sau khi được bảo dưỡng.
+                            Tôi chắc chắn sẽ quay lại sử dụng dịch vụ của họ.
+                    </p>
+                <div class="profile">
+                    <img src="./assets/img/work-1.jpg" alt="">
+                    <div class="profile-text">
+                        <h3 class="name">Văn Lâm</h3>
+                        <span>Tháng 4 năm 2024</span>
+                    </div>
+                </div>
+            </div>
+
+                        <!-- 2 -->
+            <div class="rev-box">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                    <p>Dịch vụ bảo dưỡng ở đây thật tuyệt vời! Nhân viên rất thân thiện và chu đáo, 
+                        họ giải thích kỹ lưỡng về các vấn đề của xe và các bước bảo dưỡng.
+                            Tôi cảm thấy rất yên tâm khi giao xe cho họ.
+                            Tôi chắc chắn sẽ quay lại sử dụng dịch vụ của họ.
+                    </p>
+                <div class="profile">
+                    <img src="./assets/img/work-1.jpg" alt="">
+                    <div class="profile-text">
+                        <h3 class="name">Đình Vượng</h3>
+                        <span>Tháng 4 năm 2024</span>
+                    </div>
+                </div>
+            </div>
+
+                        <!-- 3-->
+            <div class="rev-box">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                    <p>Tôi đã sử dụng dịch vụ bảo dưỡng xe ở nhiều nơi, nhưng chưa nơi nào làm tôi hài lòng như ở đây.
+                        Các kỹ thuật viên có tay nghề cao và làm việc rất nhanh chóng. 
+                        Xe của tôi không chỉ được bảo dưỡng tốt mà còn sạch sẽ hơn khi nhận lại.
+                    </p>
+                <div class="profile">
+                    <img src="./assets/img/work-1.jpg" alt="">
+                    <div class="profile-text">
+                        <h3 class="name">Võ Sơn</h3>
+                        <span>Tháng 4 năm 2024</span>
+                    </div>
+                </div>
+            </div>
+                        <!-- 4-->
+            <div class="rev-box">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                    <p>Tôi thực sự ấn tượng với dịch vụ bảo dưỡng xe ở đây.
+                        Không chỉ nhanh chóng và hiệu quả, mà còn có giá cả rất hợp lý.
+                        Nhân viên luôn sẵn sàng giải đáp mọi thắc mắc của tôi và đảm bảo xe của tôi luôn trong tình trạng tốt nhất.
+                    </p>
+                <div class="profile">
+                    <img src="./assets/img/work-1.jpg" alt="">
+                    <div class="profile-text">
+                        <h3 class="name">Mạnh Tân</h3>
+                        <span>Tháng 4 năm 2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer1">
+            <div class="footer__chiNhanh">
+                <h2>Chi Nhánh</h2>
+                <a href="">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Hà Nội</p>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Thành Phố Hồ Chí Minh</p>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Đà Nẵng</p>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Mĩ</p>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Anh</p>
+                </a>
+            </div>
+            <div class="footer__lienKet">
+                <h2>Liên Kết</h2>
+                <a href="#trangchu">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <p>Trang Chủ</p>
+                </a>
+                <a href="#trangchu">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <p>Giới Thiệu</p>
+                </a>
+                <a href="#tintuc_khuyenmai">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <p>Tin Tức & Khuyến Mãi</p>
+                </a>
+                <a href="#xemoi">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <p>Xe Mới</p>
+                </a>
+                <a href="#cars">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <p>Dịch Vụ & Bảo Dưỡng</p>
+                </a>
+            </div>
+        </div>
+        <div class="footer1">
+            <div class="footer__thongTin">
+                <h2>Thông tin liên lạc</h2>
+                <a href="">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+84912345678</p>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>lvtsCarSales@gmail.com</p>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Ngũ Hành Sơn - Đà Nẵng</p>
+                </a>
+            </div>
+            <div class="footer__mangxahoi">
+                <h2>Mạng xã hội</h2>
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                    <p>Facebook</p>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-twitter"></i>
+                    <p>Twitter</p>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                    <p>Instagram</p>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-youtube"></i>
+                    <p>Youtube</p>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <p>Linkedin</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnX11h5ywQfKtSj8PCmoN9aaq30gDh27Xcθjk=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $(".filter-item").click(function () {
+            const value = $(this).attr("data-filter");
+            if (value == "all") {
+            $(".post-box").show("1000");
+            } else {
+            $(".post-box")
+             .not("." + value)
+             .hide("1000");
+            $(".post-box")
+             .filter("." + value)
+             . show( "1000");
+            }
+        });
+        
+        $(".filter-item").click(function () {
+            $(this).addClass("active-filter").siblings().removeClass("active-filter");
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

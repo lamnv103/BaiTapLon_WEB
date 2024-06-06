@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Page</title>
+    <link rel="stylesheet" href="./assets/css/tintuc.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        
+        <div class="nav container">
+        
+        <a href="index.html" class="logo">LV<span>TS</span></a>
+
+        <a href="./Login.html" class="login">Login</a>
+        </div>
+        
+    </header>
+
+    <section class="post-header">
+        <div class="header-content post-container">
+
+        <a href="index.html" class="back-home">Quay Trở Lại</a>
+
+        <h1 class="header-title">Tin Tức Hot</h1>
+        
+        <img src="./assets/img/hinh4.webp" alt="" class="header-img">
+        </div>
+    </section>
+
+    <section class="post-content post-container">
+      <h2 class="sub-heading">Honda Civic 2025 thêm bản hybrid mạnh chỉ dưới Type R, có phanh tái tạo như xe điện, hết mang danh 'ồn nhất phân khúc'</h2>
+      <p class="post-text"> Vào cuối tháng 5/2024, Honda đã chính thức công bố bản cập nhật nhẹ cho Civic với một số thay đổi về thiết kế và hệ truyền động.
+
+        Đầu tiên, Honda Civic mới sở hữu bộ mặt được tinh chỉnh lại khá đáng kể. Hốc gió cỡ lớn tại 2 bên đã được thay thế bởi hốc gió dọc nhỏ nhắn hơn. Tản nhiệt trung tâm được nới rộng đôi chút. Các phiên bản hybrid sử dụng ốp đèn pha đồng màu thân và cánh gió đầu xe mới. Mọi phiên bản Civic đều có đèn hậu được làm tối màu hơn.</p>
+      <p class="post-text">Chuyển vào nội thất, các bản hybrid nay sở hữu ghế bọc da, dàn 12 loa stereo và màn cảm ứng trung tâm 9 inch lớn hơn. Các tính năng mới do Google cung cấp xuất hiện dưới dạng mặc định - lần đầu tiên trên Civic - từ bản cập nhật này.
+
+        Thay đổi lớn nhất trên bản cập nhật nhẹ 2025 của Honda Civic tới từ mảng truyền động với 2 cấu hình Sport Hybrid và Sport Touring Hybrid mới, trong đó bản thứ 2 chỉ mạnh thua Type R hiệu suất cao.
+      </p>
+
+      <p class="post-text">Honda không nói rõ chi tiết hệ truyền động này, hãng chỉ cho biết động cơ 2.0L 4 xy-lanh kết hợp với 2 mô-tơ điện cho tổng công suất 200 mã lực, mô-men xoắn 315 Nm. Mức thông số trên quả thực là mức cao nhất đội hình Civic thường từ trước tới nay.
+
+        Bản hybrid trên cũng sẽ thay thế phiên bản 1.5L tăng áp nay bị khai tử trên Civic thường và chỉ giữ lại trên Civic Si. Hiệu suất nhiên liệu xe sau khi điện hóa được kỳ vọng đạt 4,7 lít/100 km. Trước đó, mức tiêu thụ thấp nhất của Civic thường là 7,85 lít/100 km.
+      </p>
+
+      <p class="post-text">Cuối cùng, cũng phiên bản này được trang bị phanh tái sinh năng lượng đi kèm hệ thống treo riêng biệt giúp giảm tiếng ồn đồng thời cải thiện độ êm ái, tiện nghi trong xe.
+
+        Tạm thời Honda chưa công bố giá Civic mới. Xe sẽ bắt đầu có mặt tại các đại lý từ quý III năm nay.
+      </p>
+    </section>
+
+    <div class="share post-container">
+        <span class="share-title">Chia Sẻ</span>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+    </div>
+
+    <section class="post container">
+    </section>
+
+    <div class="footer container">
+        <p>&#169; Thông tin liên hệ.</p>
+        <div class="social">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+        </div>
+    
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnX11h5ywQfKtSj8PCmoN9aaq30gDh27Xcθjk="
+    crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function () {
+        $(".filter-item").click(function () {
+        const value = $(this).attr("data-filter");
+        if (value == "all") {
+        $(".post-box").show("1000");
+        } else {
+        $(".post-box")
+         .not("." + value)
+         .hide("1000");
+        $(".post-box")
+         .filter("." + value)
+         . show( "1000");
+        }
+    });
+    
+    $(".filter-item").click(function () {
+        $(this).addClass("active-filter").siblings().removeClass("active-filter");
+        });
+    });
+        
+        let header = document.querySelector("header");
+        
+        window.addEventListener("scroll", () => {
+        header. classList.toggle("shadow", window.scrollY > 0);
+    });
+    </script>
+</body>
+</html>

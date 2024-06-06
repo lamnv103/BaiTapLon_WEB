@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Page </title>
+    <link rel="stylesheet" href="./assets/css/tintuc.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        
+        <div class="nav container">
+        
+        <a href="index.html" class="logo">LV<span>TS</span></a>
+
+        <a href="./Login.html" class="login">Login</a>
+        </div>
+        
+    </header>
+
+    <section class="post-header">
+        <div class="header-content post-container">
+
+        <a href="index.html" class="back-home">Quay Trở Lại</a>
+
+        <h1 class="header-title">Tin Tức Hot</h1>
+        
+        <img src="./assets/img/hinh5.webp" alt="" class="header-img">
+        </div>
+    </section>
+
+    <section class="post-content post-container">
+      <h2 class="sub-heading">BMW 7-Series chạy 19.000km rao bán đắt hơn mua mới nhưng sẽ rẻ hơn nửa tỷ đồng nếu lăn bánh</h2>
+      <p class="post-text"> Một chiếc BMW 735i M Sport được rao bán trên thị trường xe cũ. Chiếc xe này được nhập khẩu và phân phối chính hãng. Theo thông tin đăng tải từ người bán, xe đã lăn bánh được 19.000 km. Giá chào bán là 4,539 tỷ đồng.</p>
+        <p class="post-text">Ngoài ra, để khách hàng đang quan tâm chiếc xe này chú ý hơn, chủ salon cho biết thêm: "Khách hàng có thể thương lượng về giá nếu thực sự có nhu cầu".
+
+            Chiếc BMW 735i M Sport rao bán có lớp sơn đen kết hợp với nội thất màu nâu. Xe sở hữu kích thước tổng thể 5.391 x 1.590 x 1.544 mm, chiều dài cơ sở 3.215 mm. Phiên bản M Sport được trang bị mâm kích thước 21 inch, trong khi 2 phiên bản còn lại chỉ là 20 inch. Chiếc sedan cỡ lớn sở hữu ngoại thất thể thao với cản trước hầm hố và xung quanh lưới tản nhiệt, ốp hông, tay nắm cửa... được sơn đen bóng trên bản M Sport.
+            </p>
+
+            <p class="post-text">Nội thất BMW 735i M Sport sở hữu nhiều ứng dụng công nghệ cao cấp. Chính giữa là cụm màn hình đôi, gồm màn hình trung tâm 14,9 inch và màn hình đồng hồ 12,3 inch chạy hệ điều hành iDrive8 mới nhất. Dàn âm thanh 20 loa Bowers & Wilkins công suất 650W.
+
+Dải pha lê ở táp-lô có tên gọi Interaction Bar - thanh điều khiển cảm ứng chạy giữa táp lô và cụm điều khiển trung tâm nơi đặt hàng loạt nút bấm điều khiển ảo cũng như hệ thống đèn nền nội thất có thể đổi màu theo chủ đề hoặc sở thích, cửa gió hàng ghế trước dạng ẩn... Nút bấm chỉnh ghế dời sang cánh cửa giống đối thủ S-Class.
+
+BMW 735i 2023 sử dụng động cơ xăng tăng áp 3.0L, 6 xy-lanh, cho công suất 286 mã lực và mô-men xoắn 425 Nm. Hộp số tự động 8 cấp Steptronic Sport và hệ dẫn động cầu sau. Xe có 6 chế độ lái.</p>
+        
+    </section>
+
+    <div class="share post-container">
+        <span class="share-title">Chia Sẽ</span>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+    </div>
+
+    <section class="post container">
+    </section>
+
+    <div class="footer container">
+        <p>&#169; Thông tin liên hệ.</p>
+        <div class="social">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+        </div>
+    
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnX11h5ywQfKtSj8PCmoN9aaq30gDh27Xcθjk="
+    crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $(".filter-item").click(function () {
+            const value = $(this).attr("data-filter");
+            if (value == "all") {
+            $(".post-box").show("1000");
+            } else {
+            $(".post-box")
+             .not("." + value)
+             .hide("1000");
+            $(".post-box")
+             .filter("." + value)
+             . show( "1000");
+            }
+        });
+        
+        $(".filter-item").click(function () {
+            $(this).addClass("active-filter").siblings().removeClass("active-filter");
+            });
+        });
+            
+            let header = document.querySelector("header");
+            
+            window.addEventListener("scroll", () => {
+            header. classList.toggle("shadow", window.scrollY > 0);
+        });
+    </script>
+</body>
+</html>

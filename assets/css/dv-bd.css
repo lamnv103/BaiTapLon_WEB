@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    list-style-type: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: inherit;
+}
+  
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #ffffffe2;
+    --main-color: #00fbff;
+    --hed-color: red;
+    --third-color: rgb(255, 230, 0);
+}
+section{
+    padding: 4rem 0 2rem;
+}
+  
+html {
+    font-size: 15.5px;
+}
+  
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.home{
+    max-width: 100%;
+    margin: auto;
+    width: 100%;
+    min-height: 640px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to bottom right, #024059, #0a0420);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+}
+.home-text{
+    padding-left: 130px;
+
+}
+.home-text h1{
+    font-size: 2.3rem;
+}
+.home-text span{
+    color: var(--hed-color)
+}
+.home-text p{
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin: 0.5rem 0 1.2rem;
+}
+.btn{
+    padding: 10px 22px;
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    font-weight: 400;
+    font: bold;
+}
+.btn:hover{
+    background-color: rgb(1, 1, 211);
+}
+.home-img{ 
+        max-width: 100%;
+        height: auto;
+}
+
+/* Add this CSS at the end of your existing CSS */
+
+@media (max-width: 768px) {
+    .home {
+      min-height: auto;
+      flex-direction: column;
+      text-align: center;
+    }
+    .home-text {
+      padding: 0;
+      margin-bottom: 2rem;
+    }
+    .home-img {
+      margin-top: 2rem;
+    }
+  }
+  /* box1 */
+  .heading{
+    text-align: center;
+  }
+  .heading span{
+    font-size: 30px;
+    color: var(--hed-color);
+  }
+  .heading p{
+    font-size: 0.938rem;
+    font-weight: 300;
+  }
+  
+  .cars-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .cars-container .box{
+    flex: 1 1 17rem;
+    position: relative;
+    height: 200px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+  }
+  .cars-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .cars-container .box img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+
+  }
+  .cars-container .box h2{
+    position: absolute;
+    bottom: 1rem;
+    left:1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    background: var(--text-color);
+    color: #0a0420;
+    padding: 8px;
+    border-radius: 0.5rem;
+  }
+  .cars-container .box:hover h2{
+    background: var(--hed-color);
+    color: var(--text-color);
+  }
+  /* bôxx */
+  .about{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .about-img{
+    flex: 1 1 21rem;
+   
+  }
+  .about-text{
+    flex: 1 1 21rem;
+  }
+  .about-text span{
+    font-weight: 500;
+    color: var(--main-color);
+  }
+  .about-text h2{
+    font-size: 1.7rem;
+  }
+  .about-text p{
+    font-size: -0.938rem;
+    margin: 0.5rem 0 1.4rem;
+  }
+  .about-text a {
+    transition: all .3s ease-in;
+  }
+  .about-text a:hover {
+    color: #fff;
+  }
+
+  /* box4 */
+  .parts{
+    background: linear-gradient(to bottom right, #024059, #0a0420);
+  }
+  .parts-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.parts-container .box{
+    flex: 1 1 20rem;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background: #fafafa;
+    border-radius: 0.5rem;
+}
+.parts-container .box img{
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 1rem;
+}
+.parts-container .box h3{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+    
+}
+.parts-container .box span{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--hed-color);
+}
+.parts-container .box .bx{
+    color: var(--hed-color);
+    margin: 0.8rem 0;
+}
+.parts-container .box .btn{
+    max-width: 120px;
+    background: red;
+}
+.parts-container .box .details {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 1.8rem;
+    right: 1rem;
+    font-size: 1rem;
+    color: #000;
+}
+.parts-container .box .details:hover{
+    color: var(--hed-color);
+    text-decoration: underline;
+}
+
+/* revieww */
+.reviews{
+    background: linear-gradient(to bottom right, #382627, #948d8d);
+}
+.reviews .heard{
+    align-items: center;
+}
+.reviews .heard h2 {
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+.review-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(260px, 1fr));
+    gap: 1.5rem;
+
+}
+.rev-box{
+    padding: 15px;
+    background: var(--text-color);
+    border-radius: 10%;
+    border: 1px solid hsl(0dcg 0% 54% / 14%);
+}
+.rev-box:hover{
+    box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+    transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.rev-box .stars i{
+    font-size: 20px;
+    color: rgb(255, 174, 0);
+}
+.rev-box p{
+    font-size:  0.948rem;
+    color: #000;
+    margin: 1rem 0;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position:  center;
+    border: 2px solid var(--third-color);
+}
+.profile .name{
+    font-size: 1rem;
+    color: #000;
+}
+.profile span{
+    font-size: 0.87rem;
+    font-weight: 500;
+    color:rgb(83, 83, 83);
+}
