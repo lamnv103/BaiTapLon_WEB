@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+    color: inherit;
+}
+  
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #ffffffe2;
+    --main-color: #00fbff;
+    --hed-color: red;
+    --third-color: rgb(255, 230, 0);
+}
+section{
+    padding: 4rem 0 2rem;
+}
+  
+html {
+    font-size: 15.5px;
+}
+  
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+.head1{
+background-image: url(Images/nen.jpeg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.content{
+    display: flex;
+    height: 85%;
+    align-items: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.container .content .columan h2{
+    font-size: 115px;
+}
+.container .content .columan h6{
+    font-size: 20px;
+    line-height: 20px;
+}
+.container .content .columan{
+    flex-basis: 50%;
+
+}
+.container .content .columan button{
+    width: 165px;
+    color: black;
+    font-size: 20px;
+    padding-top: 12px 0;
+    margin-top: 30px;
+    border: 1px solid wheat;
+    border-radius: 20px;
+}
+.container .content .columan button:hover{
+    background-color: rgb(101, 105, 101, 0.822);
+    color: white;
+}
+.cars{
+    width: 200px;
+    height: 210px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+}
+.cars h1{
+    background-size: rgba(233, 228, 218, 0.068);
+    color: hsl(0, 0%, 100%);
+}
+.car1 {
+    background-image: url(Images/BMW.jpg);
+}
+.car2 {
+    background-image: url(Images/the5.jpg);
+}
+.car3 {
+    background-image: url(Images/coupe8.jpg);
+}
+.car4 {
+    background-image: url(anh/mer4.jpg);
+}
+.cars:hover{
+    transform: translateY(-15px);
+    transition: 0.8s;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .container .content .columan h2 {
+        font-size: 80px;
+    }
+    .container .content .columan h6 {
+        font-size: 18px;
+    }
+    .container .content {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        height: auto;
+        padding: 20px;
+    }
+    .container .content {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    .container .content .columan {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .container .content .columan h2 {
+        font-size: 60px;
+    }
+    .container .content .columan h6 {
+        font-size: 16px;
+    }
+    .container .content .columan button {
+        width: 100%;
+        font-size: 18px;
+    }
+    .cars {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+    .container .content .columan h2 {
+        font-size: 50px;
+    }
+    .container .content .columan h6 {
+        font-size: 14px;
+    }
+    .container .content .columan button {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+.container-bx {
+    background-color: #05050f; /* Nền trắng cho phần nội dung */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+video {
+    width: 100%;
+    max-width: 100%; /* Đặt chiều rộng tối đa của video */
+    height: auto; /* Đảm bảo tỉ lệ khung hình của video không bị biến dạng */
+    border-radius: 10px;
+}
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.content-container h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+.content-container h6 {
+    padding: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+ /* box3 */
+ .parts{
+    background: linear-gradient(to bottom right, #000000, #022938);
+  }
+  .heading {
+    text-align: center;
+    background: linear-gradient(to bottom right, #024059, #0a051d);
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+}
+.heading span {
+    display: block;
+    font-size: 2rem;
+    color: aqua; /* Màu xanh để làm nổi bật */
+    margin-bottom: 10px;
+}
+.heading h2 {
+    font-size: 2rem;
+    color: #d1cbf8;
+    margin-bottom: 10px;
+}
+.heading p {
+    font-size: 1rem;
+    color: #cecaca;
+}
+  .parts-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.parts-container .box{
+    flex: 1 1 20rem;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom right, #ffffff, #ffffff);
+    border-radius: 0.5rem;
+}
+.parts-container .box img{
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 1rem;
+}
+.parts-container .box img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+
+  }
+.parts-container .box h3{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+    
+}
+.parts-container .box span{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: red;
+}
+.parts-container .box .bx{
+    color: var(--hed-color);
+    margin: 0.8rem 0;
+}
+.parts-container .box .btn{
+    max-width: 120px;
+    background: red;
+}
+.parts-container .box .details {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 1.8rem;
+    right: 1rem;
+    font-size: 1rem;
+    color: #000;
+}
+.parts-container .box .details:hover{
+    color: var(--hed-color);
+    text-decoration: underline;
+}
+
+
+.bodi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #bcd2e0;
+}
+
+/* Container Styles */
+.boxx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+    background-image: url(anh/M.jpg);
+    opacity: 0.9;
+}
+
+/* Card Styles */
+.boxx .card {
+    position: relative;
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    transition: height 0.5s ease;
+}
+
+.boxx .card:hover {
+    height: 400px;
+}
+
+/* Image Box Styles */
+.boxx .img-box {
+    position: absolute;
+    top: 20px;
+    width: 90%;
+    height: 220px;
+    background-color: #333;
+    border-radius: 12px;
+    left: 17px;
+    overflow: hidden;
+    transition: transform 0.5s ease, top 0.5s ease;
+}
+
+.boxx .card:hover .img-box {
+    top: -100px;
+    transform: scale(0.75);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styles */
+.boxx .img-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Content Styles */
+.boxx .contents {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: top 0.5s ease;
+}
+
+.boxx .card:hover .contents {
+    top: 130px;
+    height: 250px;
+}
+
+.boxx .contents h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--clr);
+    margin-bottom: 15px; /* Add space between h2 and other elements */
+}
+
+.boxx .contents p {
+    color: #333;
+    margin-bottom: 15px; /* Add space between p and button */
+}
+
+button {
+    padding: 12px 25px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+

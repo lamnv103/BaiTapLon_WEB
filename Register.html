@@ -20,21 +20,20 @@
         </div>
         <div class="wrapper-login">
             <h2>Đăng kí</h2>
-            <form action="#">
+            <form id="registerForm">
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required>
+                    <input type="email" id="email" required>
                     <label>Nhập email của bạn</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" required>
+                    <input type="password" id="password" required>
                     <label>Nhập mật khẩu của bạn</label>
                 </div>
-                
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" required>
+                    <input type="password" id="confirmPassword" required>
                     <label>Nhập lại mật khẩu của bạn</label>
                 </div>
                 <button type="submit" class="btn"> <span>Đăng kí</span> </button>
@@ -43,8 +42,6 @@
                 </div>
             </form>
         </div>
-        </div>
-
     </section>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -58,10 +55,43 @@
             delay: 200,
         });
 
-        ScrollReveal().reveal('', {origin: 'top'});
+        ScrollReveal().reveal('.home .content h2', {origin: 'top'});
         ScrollReveal().reveal('.wrapper-login h2', {origin: 'right'});
         ScrollReveal().reveal('.input-box, .remember-forgot, .wrapper-login .btn, .register-link', {origin: 'bottom'});
-        ScrollReveal().reveal('', {origin: 'left'});
+        ScrollReveal().reveal('.home .content', {origin: 'left'});
+    </script>
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Ngăn chặn form submit mặc định
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            // Kiểm tra định dạng email
+            if (!email.includes('@')) {
+                alert('Email phải chứa ký tự @.');
+                return;
+            }
+
+            // Kiểm tra độ dài mật khẩu
+            if (password.length < 8) {
+                alert('Mật khẩu phải có ít nhất 8 ký tự.');
+                return;
+            }
+
+            // Kiểm tra mật khẩu nhập lại
+            if (password !== confirmPassword) {
+                alert('Mật khẩu nhập lại không khớp.');
+                return;
+            }
+
+            // Nếu hợp lệ, có thể xử lý đăng ký tài khoản ở đây
+            alert('Đăng ký thành công!');
+
+            // Thay đổi đường dẫn bên dưới tới trang bạn muốn chuyển tới sau khi đăng ký
+            window.location.href = 'login.html';
+        });
     </script>
 </body>
 
